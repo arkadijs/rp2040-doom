@@ -82,6 +82,10 @@
 #if PICO_BUILD
 #include "i_picosound.h"
 #endif
+
+#if USB_SUPPORT
+#include "host/usbh.h"
+#endif
 //
 // D-DoomLoop()
 // Not a globally visible function,

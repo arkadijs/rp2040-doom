@@ -38,6 +38,7 @@
 #if USB_SUPPORT
 #include "pico/binary_info.h"
 #include "tusb.h"
+#include "host/usbh.h"
 #include "hardware/irq.h"
 bi_decl(bi_program_feature("USB keyboard support"))
 bi_decl(bi_program_feature("USB mouse support"))
