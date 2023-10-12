@@ -117,8 +117,8 @@ int vanilla_keyboard_mapping = true;
 // the values exceed the value of mouse_threshold, they are multiplied
 // by mouse_acceleration to increase the speed.
 #if !NO_USE_MOUSE
-int mouse_acceleration = 2;
-int mouse_threshold = 10;
+int mouse_acceleration = 5;
+int mouse_threshold = 5;
 #endif
 
 enum {
@@ -491,9 +491,10 @@ void tuh_hid_mount_cb(uint8_t dev_addr, uint8_t instance, uint8_t const* desc_re
 
     if (is_sandio) {
         novert = 1;
-        mouseSensitivity <<= 1;
+        mouseSensitivity = 20;
+        mousebstrafe = -1;
+        mousebuse = 1;
     }
-
 }
 
 // Invoked when device with hid interface is un-mounted
