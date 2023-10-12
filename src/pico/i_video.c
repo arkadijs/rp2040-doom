@@ -192,7 +192,7 @@ const scanvideo_timing_t vga_timing_1280x1000_60_default = // same as 1280x1024_
 
 const scanvideo_timing_t vga_timing_640x1000_60_default = // same as 1280x1024_60 standard just with some 12 blank lines at the top and bottom
         {
-                .clock_freq = 108000000 / 2,
+                .clock_freq = 112000000 / 2,
 
 #if PICO_ON_DEVICE
                 .h_active = 1280 / 2,

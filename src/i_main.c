@@ -62,8 +62,9 @@ int main(int argc, char **argv)
     myargv = argv;
 #endif
 #if PICO_ON_DEVICE
-    vreg_set_voltage(VREG_VOLTAGE_1_30);
-#define PLL 270000
+    vreg_set_voltage(VREG_VOLTAGE_1_20);
+    sleep_ms(10);
+#define PLL 280000
     set_sys_clock_khz(PLL, true);
     clock_configure(
             clk_peri,
