@@ -85,6 +85,9 @@ int main(int argc, char **argv)
 #endif
 #if LIB_PICO_STDIO
     stdio_init_all();
+#if LIB_PICO_STDIO_USB
+    sleep_ms(1500);
+#endif
 #endif
 #if PICO_BUILD
     I_Init();
