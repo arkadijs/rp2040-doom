@@ -3,6 +3,8 @@
 This is a fork of a port of Doom for RP2040 devices, derived from [Chocolate Doom](https://github.com/chocolate-doom/chocolate-doom).
 Generic USB mouse and limited multi-axis controller support, specifically targeting SandioTech 3D Game O2 [mouse joysticks](https://github.com/arkadijs/sandioblast).
 
+For SPI screen support check [rp2040-mipi](https://github.com/arkadijs/rp2040-doom/tree/rp2040-mipi) branch.
+
 [![RP2040 Doom on a Raspberry Pi Pico](https://img.youtube.com/vi/AAlQNIQVkV4/hqdefault.jpg)](https://youtu.be/AAlQNIQVkV4)
 [![RP2040 Doom on a Raspberry Pi Pico CRT monitor](https://img.youtube.com/vi/f6SQeZwN-8o/hqdefault.jpg)](https://youtu.be/f6SQeZwN-8o)
 
