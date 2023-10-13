@@ -509,6 +509,7 @@ function(add_doom_tiny SUFFIX RENDER_LIB)
         USE_EMU8950_OPL=1
         USE_DIRECT_MIDI_LUMP=1
 
+        NO_USE_UART=1
         NO_USE_NET=1 # standard networking
         USE_PICO_NET=1
         # for vgaboard
