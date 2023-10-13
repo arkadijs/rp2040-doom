@@ -570,6 +570,7 @@ function(add_doom_tiny SUFFIX RENDER_LIB)
 
         NO_IERROR=1
     )
+    #pico_enable_stdio_usb(doom_tiny${SUFFIX} 1)
     if (PICO_ON_DEVICE)
         target_compile_options(doom_tiny${SUFFIX} PRIVATE -fno-common -fdata-sections -Wl,--sort-section=alignment)
         target_compile_definitions(doom_tiny${SUFFIX} PRIVATE
