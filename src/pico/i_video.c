@@ -969,7 +969,9 @@ void __no_inline_not_in_flash_func(new_frame_stuff)() {
     }
 }
 
-void __scratch_x("scanlines") fill_scanlines() {
+// with GCC 12 doesn't fit into the scratch_x either
+// __scratch_x("scanlines")
+void __not_in_flash_func(fill_scanlines)() {
 #if SUPPORT_TEXT
     struct scanvideo_scanline_buffer *buffer = scanvideo_begin_scanline_generation_linked(display_video_type == VIDEO_TYPE_TEXT ? 2 : 1, false);
 #else
